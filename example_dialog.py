@@ -9,7 +9,7 @@ from textual.events import Key
 class InputModal(Screen):
     """A modal popup screen that asks the user for text."""
 
-    MODAL = True  # Tells Textual this screen should be shown as a modal.
+    MODAL = True  # Tells Textual this screen should be displayed as a modal.
 
     class Submitted(Message):
         """Message posted when user clicks OK (or otherwise confirms)."""
@@ -72,6 +72,21 @@ class MyApp(App):
     def key_a(self) -> None:
         """Pressing 'a' opens the input modal."""
         self.push_screen(InputModal())
+
+    def key_d(self) -> None:
+        """
+        Pressing 'd' will delete the currently selected item from the list,
+        if there is one.
+        """
+        selected_index = self.list_view.index  # None if no selection
+        if selected_index is not None:
+            children = list(self.list_view.children)
+            if 0 <= selected_index < len(children):
+                # Remove the child from the DOM by calling its own `remove()`.
+                children[selected_index].remove()
+
+                # Optionally, reset or adjust the selection. For instance:
+                # self.list_view.index = None
 
     def on_input_modal_submitted(self, message: InputModal.Submitted) -> None:
         """Add the user-submitted text to the list."""
