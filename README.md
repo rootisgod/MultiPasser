@@ -132,3 +132,13 @@ class WelcomeApp(App):
         self.query_one(Button).label = "YES!"
 ```
 
+
+### Textual Issue
+
+Replace this textual_terminal file using this script (until there is a new release)
+
+https://github.com/mitosch/textual-terminal/pull/11/files
+
+```
+./update_textual_terminal_file.sh
+```

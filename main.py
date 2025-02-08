@@ -16,7 +16,10 @@ from textual.containers import Container
 from textual.widgets import Header, Footer, DataTable, Input, Button, Label, RichLog
 from textual.widgets.data_table import RowDoesNotExist
 from textual.screen import ModalScreen
+# https://github.com/mitosch/textual-terminal/pull/11/files
+# nano /Users/iain/Code/Github/MultiPasser/venv/lib/python3.12/site-packages/textual_terminal/_terminal.py
 from textual_terminal import Terminal
+
 
 class HelpScreen(ModalScreen[None]):
     BINDINGS = [("escape", "pop_screen")]

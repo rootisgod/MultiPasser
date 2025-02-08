@@ -1,3 +1,4 @@
+# Uses textual 1.0.0
 from textual.app import App, ComposeResult
 from textual.screen import Screen
 from textual.containers import Container, Vertical, Horizontal

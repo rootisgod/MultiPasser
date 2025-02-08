@@ -1,5 +1,6 @@
 PyYAML==6.0
-textual==0.55.1
-textual-dev==1.5.1
-rich
-textual-terminal
+textual==1.0.0
+textual-dev==1.7.0
+rich==13.9.4
+# Needs an update when available - see script update_textual_terminal_file.sh
+textual-terminal==0.3.0
