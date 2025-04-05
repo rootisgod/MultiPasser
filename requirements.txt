@@ -1,6 +1,6 @@
-PyYAML==6.0
-textual==1.0.0
+PyYAML==6.0.2
+textual==3.0.1
 textual-dev==1.7.0
-rich==13.9.4
-# Needs an update when available - see script update_textual_terminal_file.sh
+rich==14.0.0
+# Needs an update when available - see script update_textual_terminal_file.sh for https://github.com/mitosch/textual-terminal/releases
 textual-terminal==0.3.0
