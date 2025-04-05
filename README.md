@@ -55,7 +55,7 @@ To build a binary, do this.
 ## MAC
 ```
 pip install pyinstaller
-pyinstaller -F -w -n mptui main.py
+pyinstaller -F -w -n mptui main_tui.py
 ./dist/mptui
 ```
 

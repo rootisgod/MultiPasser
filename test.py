@@ -3,7 +3,7 @@
 
 import os
 import re
-from main import *
+from main_tui import *
 
 prg = './main.py'
 
