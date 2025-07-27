@@ -1,0 +1,1 @@
+curl -L https://raw.githubusercontent.com/mitosch/textual-terminal/f5c353f87408760dc105c660a30a99aeb70611cb/textual_terminal/_terminal.py -o ./venv/lib/python3.10/site-packages/textual_terminal/_terminal.py
