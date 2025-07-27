@@ -90,7 +90,8 @@ jobs:
                         python3 -m pip install --upgrade pip
                         pip3 install -r requirements.txt
                         pip3 install -r requirements-build.txt
-                        sudo ./update_textual_terminal_file_ubuntu_2204_3.10.sh
+                        echo "This fixes a werid textual bug"
+                        sudo curl -L https://raw.githubusercontent.com/mitosch/textual-terminal/f5c353f87408760dc105c660a30a99aeb70611cb/textual_terminal/_terminal.py -o ./venv-multipasser/lib/python3.10/site-packages/textual_terminal/_terminal.py
                         pyinstaller -F -w -n multipasser --onefile --windowed --icon=MultiManage-Logo.ico main_tui.py
                         cd dist/
                         zip multipasser.zip multipasser
