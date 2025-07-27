@@ -5,6 +5,7 @@ import re
 import json
 from typing import Dict, Any, List, Optional
 
+
 def run_multipass_command(command):
     """
     Run a multipass command and capture its output.
@@ -93,7 +94,8 @@ def change_multipass_instance_power_state(instance_name: str, desired_state: str
         print(f"Can only {allowed_states} instances")
 
 
-def get_running_multipass_instance_names() -> List[str]:
+# def get_running_multipass_instance_names() -> List[str]:
+def get_running_multipass_instance_names() -> list[str, Any]:
     """ Return names of running instances """
 
     instances = get_multipass_instances()
