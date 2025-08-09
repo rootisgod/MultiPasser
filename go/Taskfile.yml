@@ -2,6 +2,10 @@ version: '3'
 
 tasks:
 
+  run:
+    cmds:
+      - go run .
+
   build:
     cmds:
       - go build -o multipasser
