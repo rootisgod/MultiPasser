@@ -8,6 +8,11 @@ go get github.com/rivo/tview
 go run .
 ```
 
+# Build a Binary
+
+```bash
+go build -o multipasser
+```
 
 # Update
 

@@ -136,3 +136,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea/misc.xml
+go/multipasser
+go/multipasser.exe
